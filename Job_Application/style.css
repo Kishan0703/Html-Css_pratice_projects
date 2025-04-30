@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 900px;
+    margin: auto;
+    height: 600px;
+    background-color: white;
+    border-radius: 30px;
+
+    
+}
+
+.contant{
+    padding: 40px;
+
+}
+.gapr{
+    margin-right: 80px;
+}
+
+/* .gapl{
+    margin-right: 80px;
+} */
+
+.first , .second , .third, .fourth, .fifth, footer{
+    margin-top: 40px;
+}
+
+#textarea{
+    width: 400px;
+    height: 100px;
+}
+
+footer{
+    display: flex;
+    justify-content: end;
+    
+}
+
+footer button{
+    color: white;
+    background-color: red;
+    border-radius: 20px;
+}
+
+.justifyend{
+    display: flex;
+    justify-content: end;
+}

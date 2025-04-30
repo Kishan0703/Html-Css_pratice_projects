@@ -1,0 +1,41 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 900px;
+    height: 900px;
+    background-color: rgb(215, 229, 241);
+    border:10px solid aqua;
+}
+
+.content{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+img{
+    border-radius: 125%;
+}
+
+.info{
+    margin-left: 90px;
+}
+
+.info h1{
+    font-size: 70px;
+}
+
+.info h4{
+    font-size: 25px;
+}
+
