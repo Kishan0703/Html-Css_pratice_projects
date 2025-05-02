@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    min-height: 100%;
+}
+
+.top_img{
+    background-image: url();
+}
