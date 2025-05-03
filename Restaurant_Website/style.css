@@ -1,0 +1,292 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300S;
+}
+
+body {
+    padding-top: 100px; /* Add padding to body to prevent content from hiding behind fixed navbar */
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navigation{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+   
+    width: 100%;
+    margin: 0 auto;
+   
+    padding-left: 30px;
+    padding-right: 90px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.logo img{
+    height: 90px;
+    width: auto;
+}
+
+
+.profile{
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tbox{
+    background-color: green;
+    padding: 7px;
+    border-radius: 3px;
+
+}
+
+.text h1{
+    font-size: 44px;
+
+}
+
+.text p{
+    font-size: 18px;
+}
+
+.bbox{
+    background-color: orange;
+    padding: 6px;
+    border-radius: 3px;
+}
+
+.gap{
+    margin-bottom: 40px;
+    margin-left: 30px;
+}
+
+
+.offers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+}
+.photo img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+   object-fit: cover;
+   padding: 7px;
+
+}
+
+.photo:hover{
+    box-shadow: 4px black;
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+
+.before_grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+
+.menu_box{
+    background-color: green;
+    padding: 5px;
+    border-radius: 10px;
+  
+}
+
+.center{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.grid{
+    padding: 30px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "a3 a3 a6 a2"
+                         "a3 a3 a6 a5 "
+                         "a1 a7 a4 a5";
+    width: 100%;
+}
+
+.grid > div {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.grid img:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+    border-radius: 10px;
+}
+
+.item1{
+    grid-area: a1;
+}
+.item2{
+    grid-area: a2;
+}
+.item3{
+    grid-area: a3;
+}
+.item4{
+    grid-area: a4;
+}
+.item5{
+    grid-area: a5;
+}
+.item6{
+    grid-area: a6;
+}
+.item7{
+    grid-area: a7;
+}
+
+
+@media (max-width:786px){
+    .profile{
+        flex-direction: column;
+    }
+}
+
+
+footer{
+    background-color: lightgoldenrodyellow;
+}
+.footer_logo img{
+    width: 150px;
+    height: auto;
+}
+.footer_container{
+    display: flex;
+   
+    justify-content: space-between;
+    
+}
+
+.footer {
+    background-color: #f8f8f8;
+    padding: 50px 60px;
+    margin-top: 50px;
+
+}
+
+.footer_logo img {
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.footer_links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.link_column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.link_column h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.link_column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.link_column ul li {
+    margin-bottom: 10px;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.link_column ul li:hover {
+    color: #000;
+}
+
+.link_column input[type="email"] {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.social_icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social_icons .icon {
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social_icons .icon:hover {
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .footer_links {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .link_column {
+        width: 100%;
+    }
+}
